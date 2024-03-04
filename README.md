@@ -77,23 +77,11 @@ If you find OpenAPI Generator useful for work, please consider asking your compa
 [<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAhEYadUyZYzGUotZiSdXkVMqqLGuohyixLl4eUpUV6pAbUULL" width="150">](https://checklyhq.com/?utm_source=openapi_generator&utm_medium=github_webpage&utm_campaign=sponsor)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gradle_logo.png/320px-Gradle_logo.png" width="150">](https://gradle.org?utm_source=openapi_generator&utm_medium=github_webpage&utm_campaign=sponsor)
 
-## Overview
-
-OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs,  documentation and configuration automatically given an [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification) (both 2.0 and 3.0 are supported). Currently, the following languages/frameworks are supported:
-
-|                                  | Languages/Frameworks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| -------------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **API clients**                  | **ActionScript**, **Ada**, **Apex**, **Bash**, **C**, **C#** (.net 2.0, 3.5 or later, .NET Standard 1.3 - 2.1, .NET Core 3.1, .NET 5.0. Libraries: RestSharp, GenericHost, HttpClient), **C++** (Arduino, cpp-restsdk, Qt5, Tizen, Unreal Engine 4), **Clojure**, **Crystal**, **Dart**, **Elixir**, **Elm**, **Eiffel**, **Erlang**, **Go**, **Groovy**, **Haskell** (http-client, Servant), **Java** (Apache HttpClient 4.x, Apache HttpClient 5.x, Jersey2.x, OkHttp, Retrofit1.x, Retrofit2.x, Feign, RestTemplate, RESTEasy, Vertx, Google API Client Library for Java, Rest-assured, Spring 5 Web Client, MicroProfile Rest Client, Helidon), **Jetbrains HTTP Client**, **Julia**, **k6**, **Kotlin**, **Lua**, **N4JS**, **Nim**, **Node.js/JavaScript** (ES5, ES6, AngularJS with Google Closure Compiler annotations, Flow types, Apollo GraphQL DataStore), **Objective-C**, **OCaml**, **Perl**, **PHP**, **PowerShell**, **Python**, **R**, **Ruby**, **Rust** (hyper, reqwest, rust-server), **Scala** (akka, http4s, scalaz, sttp, swagger-async-httpclient, pekko), **Swift** (2.x, 3.x, 4.x, 5.x), **Typescript** (AngularJS, Angular (9.x - 17.x), Aurelia, Axios, Fetch, Inversify, jQuery, Nestjs, Node, redux-query, Rxjs), **XoJo**, **Zapier** |
-| **Server stubs**                 | **Ada**, **C#** (ASP.NET Core, Azure Functions), **C++** (Pistache, Restbed, Qt5 QHTTPEngine), **Erlang**, **F#** (Giraffe), **Go** (net/http, Gin, Echo), **Haskell** (Servant, Yesod), **Java** (MSF4J, Spring, Undertow, JAX-RS: CDI, CXF, Inflector, Jersey, RestEasy, Play Framework, [PKMST](https://github.com/ProKarma-Inc/pkmst-getting-started-examples), [Vert.x](https://vertx.io/), [Apache Camel](https://camel.apache.org/), [Helidon](https://helidon.io/)), **Julia**, **Kotlin** (Spring Boot, [Ktor](https://github.com/ktorio/ktor), [Vert.x](https://vertx.io/)), **PHP** (Laravel, Lumen, [Mezzio (fka Zend Expressive)](https://github.com/mezzio/mezzio), Slim, Silex, [Symfony](https://symfony.com/)), **Python** (FastAPI, Flask), **NodeJS**, **Ruby** (Sinatra, Rails5), **Rust** ([rust-server](https://openapi-generator.tech/docs/generators/rust-server/)), **Scala** (Akka, [Finch](https://github.com/finagle/finch), [Lagom](https://github.com/lagom/lagom), [Play](https://www.playframework.com/), Scalatra)                                                                                                                                                                                                                                               |
-| **API documentation generators** | **HTML**, **Confluence Wiki**, **Asciidoc**, **Markdown**, **PlantUML**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **Configuration files**          | [**Apache2**](https://httpd.apache.org/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **Others**                       | **GraphQL**, **JMeter**, **Ktorm**, **MySQL Schema**, **Postman Collection**, **Protocol Buffer**, **WSDL**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-
 ## Table of contents
 
   - [OpenAPI Generator](#openapi-generator)
-  - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
   - [1 - Installation](#1---installation)
     - [1.1 - Compatibility](#11---compatibility)
     - [1.2 - Artifacts on Maven Central](#12---artifacts-on-maven-central)
@@ -110,12 +98,26 @@ OpenAPI Generator allows generation of API client libraries (SDK generation), se
     - [3.4 - License Information on Generated Code](#34---license-information-on-generated-code)
     - [3.5 - IDE Integration](#35---ide-integration)
   - [4 - Companies/Projects using OpenAPI Generator](#4---companiesprojects-using-openapi-generator)
-  - [5 - Presentations/Videos/Tutorials/Books](#5---presentationsvideostutorialsbooks)
-  - [6 - About Us](#6---about-us)
-    - [6.1 - OpenAPI Generator Core Team](#61---openapi-generator-core-team)
-    - [6.2 - OpenAPI Generator Technical Committee](#62---openapi-generator-technical-committee)
-    - [6.3 - History of OpenAPI Generator](#63---history-of-openapi-generator)
-  - [7 - License](#7---license)
+  - [5 - More Documentation Available](#5---more-documentation-available)
+  - [6 - Presentations/Videos/Tutorials/Books](#6---presentationsvideostutorialsbooks)
+  - [7 - About Us](#7---about-us)
+    - [7.1 - OpenAPI Generator Core Team](#71---openapi-generator-core-team)
+    - [7.2 - OpenAPI Generator Technical Committee](#72---openapi-generator-technical-committee)
+    - [7.3 - History of OpenAPI Generator](#73---history-of-openapi-generator)
+  - [8 - License](#8---license)
+
+## Overview
+
+OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs,  documentation and configuration automatically given an [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification) (both 2.0 and 3.0 are supported). Currently, the following languages/frameworks are supported:
+
+|                                  | Languages/Frameworks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| -------------------------------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **API clients**                  | **ActionScript**, **Ada**, **Apex**, **Bash**, **C**, **C#** (.net 2.0, 3.5 or later, .NET Standard 1.3 - 2.1, .NET Core 3.1, .NET 5.0. Libraries: RestSharp, GenericHost, HttpClient), **C++** (Arduino, cpp-restsdk, Qt5, Tizen, Unreal Engine 4), **Clojure**, **Crystal**, **Dart**, **Elixir**, **Elm**, **Eiffel**, **Erlang**, **Go**, **Groovy**, **Haskell** (http-client, Servant), **Java** (Apache HttpClient 4.x, Apache HttpClient 5.x, Jersey2.x, OkHttp, Retrofit1.x, Retrofit2.x, Feign, RestTemplate, RESTEasy, Vertx, Google API Client Library for Java, Rest-assured, Spring 5 Web Client, MicroProfile Rest Client, Helidon), **Jetbrains HTTP Client**, **Julia**, **k6**, **Kotlin**, **Lua**, **N4JS**, **Nim**, **Node.js/JavaScript** (ES5, ES6, AngularJS with Google Closure Compiler annotations, Flow types, Apollo GraphQL DataStore), **Objective-C**, **OCaml**, **Perl**, **PHP**, **PowerShell**, **Python**, **R**, **Ruby**, **Rust** (hyper, reqwest, rust-server), **Scala** (akka, http4s, scalaz, sttp, swagger-async-httpclient, pekko), **Swift** (2.x, 3.x, 4.x, 5.x), **Typescript** (AngularJS, Angular (9.x - 17.x), Aurelia, Axios, Fetch, Inversify, jQuery, Nestjs, Node, redux-query, Rxjs), **XoJo**, **Zapier** |
+| **Server stubs**                 | **Ada**, **C#** (ASP.NET Core, Azure Functions), **C++** (Pistache, Restbed, Qt5 QHTTPEngine), **Erlang**, **F#** (Giraffe), **Go** (net/http, Gin, Echo), **Haskell** (Servant, Yesod), **Java** (MSF4J, Spring, Undertow, JAX-RS: CDI, CXF, Inflector, Jersey, RestEasy, Play Framework, [PKMST](https://github.com/ProKarma-Inc/pkmst-getting-started-examples), [Vert.x](https://vertx.io/), [Apache Camel](https://camel.apache.org/), [Helidon](https://helidon.io/)), **Julia**, **Kotlin** (Spring Boot, [Ktor](https://github.com/ktorio/ktor), [Vert.x](https://vertx.io/)), **PHP** (Laravel, Lumen, [Mezzio (fka Zend Expressive)](https://github.com/mezzio/mezzio), Slim, Silex, [Symfony](https://symfony.com/)), **Python** (FastAPI, Flask), **NodeJS**, **Ruby** (Sinatra, Rails5), **Rust** ([rust-server](https://openapi-generator.tech/docs/generators/rust-server/)), **Scala** (Akka, [Finch](https://github.com/finagle/finch), [Lagom](https://github.com/lagom/lagom), [Play](https://www.playframework.com/), Scalatra)                                                                                                                                                                                                                                               |
+| **API documentation generators** | **HTML**, **Confluence Wiki**, **Asciidoc**, **Markdown**, **PlantUML**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Configuration files**          | [**Apache2**](https://httpd.apache.org/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Others**                       | **GraphQL**, **JMeter**, **Ktorm**, **MySQL Schema**, **Postman Collection**, **Protocol Buffer**, **WSDL**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
 
 ## [1 - Installation](#table-of-contents)
 
@@ -139,7 +141,7 @@ For old releases, please refer to the [**Release**](https://github.com/OpenAPITo
 
 For decomissioned generators/libraries/frameworks, please refer to [the "Decommission" label](https://github.com/OpenAPITools/openapi-generator/issues?q=label%3ADecommission+is%3Amerged+) in the pull request page.
 
-## [1.2 - Artifacts on Maven Central](#table-of-contents)
+### [1.2 - Artifacts on Maven Central](#table-of-contents)
 
 You can find our released artifacts on maven central:
 
@@ -442,6 +444,7 @@ Or install it as dev-dependency:
 npm install @openapitools/openapi-generator-cli -D
 ```
 <!-- /RELEASE_VERSION -->
+
 ## [2 - Getting Started](#table-of-contents)
 
 To generate a PHP client for [petstore.yaml](https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml), please run the following
@@ -592,6 +595,7 @@ Here is a list of community-contributed IDE plug-ins that integrate with OpenAPI
 - Visual Studio Code: [Codewind OpenAPI Tools](https://marketplace.visualstudio.com/items?itemName=IBM.codewind-openapi-tools) by [IBM](https://marketplace.visualstudio.com/publishers/IBM)
 
 
+
 ## [4 - Companies/Projects using OpenAPI Generator](#table-of-contents)
 Here are some companies/projects (alphabetical order) using OpenAPI Generator in production. To add your company/project to the list, please visit [README.md](README.md) and click on the icon to edit the page.
 
@@ -736,7 +740,51 @@ Here are some companies/projects (alphabetical order) using OpenAPI Generator in
 - [Zalando](https://www.zalando.com)
 - [3DS Outscale](https://www.outscale.com/)
 
-## [5 - Presentations/Videos/Tutorials/Books](#table-of-contents)
+## [5 - More Documentation Available](#table-of-contents)
+### General Release Information
+- [Release Summary](docs/release-summary.md): (outdated) concerning versioning and cadence.
+- [Roadmap](docs/roadmap.md): (outdated) concerning short-, medium- and long-term goals.
+- [Specification Information](docs/specification-info.md): (outdated).
+- [Migration](docs/migration-guide.adoc): (outdated) concerning migrating from one version of OpenAPI-Generator to a newer one.
+
+### Contributors and Contributing
+- [Core Team](docs/core-team.md): (outdated) members of the designated core team.
+- [Code of Conduct](docs/conduct.md)
+- [Rules for Contributing](docs/contributing.md): templates and rules to follow in order to contribute to the project.
+- [FAQ Contributing](docs/faq-contributing.md): (outdated) frequently asked questions for contributing.
+
+### Usage
+#### Installation and Getting Started
+- [Installation](docs/installation.md): various guides, including npm, Homebrew, Scoop, Docker, JAR file and Bash Launcher Script.
+- [Building](docs/building.md): guides for building the project in Maven and Docker.
+- [Workflow Integrations](docs/integration.md): (outdated) concerning integration on Gradle, Maven, sbt, Bazel, Cake Addin and GitHub.
+- [Plugins](docs/plugins.md): guide to Gradle and Maven plugins.
+
+#### Usage and Customization
+- [General Usage Guide](docs/usage.md): concerning the functionality of various available commands.
+- [Configuration Options](docs/configuration.md): guide to the various ways to configure global and additional properties. To see the list of global properties available, see [this file](docs/global-properties.md).
+- [Customization](docs/customization.md): customization guide.
+- [Templating](docs/templating.md): guide in using templates.
+- [Generators](docs/generators.md): list of the available generators. To create a new generator, see [this guide](docs/new-generator.md). There is also a [Frequently Asked Question (outdated)](docs/faq-generators.md) available.
+
+#### Information about the Main Modules
+- [Gradle Plugin](modules/openapi-generator-gradle-plugin/README.adoc): more information about the Gradle Plugin.
+- [Maven Plugin](modules/openapi-generator-maven-plugin/README.md): additional information about the Maven Plugin.
+- [OpenAPI Generated Server](modules/openapi-generator-online/README.md)
+- [Online](docs/online.md): online uses of OpenAPI-Generator.
+
+#### Post-Processing
+- [Debugging](docs/debugging.md): guide for debugging various aspects, like generation or templating.
+- [File Post-Processing](docs/file-post-processing.md): guide for enabling file post-processing.
+
+### Frequently Asked Questions
+- [General](docs/faq.md): (outdated).
+- [About Contributing](docs/faq-contributing.md): (outdated).
+- [About Generators](docs/faq-generators.md): (outdated).
+- [About Extending](docs/faq-extending.md): (outdated).
+- [Questions and Answers](docs/qna.md): (outdated).
+
+## [6 - Presentations/Videos/Tutorials/Books](#table-of-contents)
 
 - 2018/05/12 - [OpenAPI Generator - community drivenで成長するコードジェネレータ](https://ackintosh.github.io/blog/2018/05/12/openapi-generator/) by [中野暁人](https://github.com/ackintosh)
 - 2018/05/15 - [Starting a new open-source project](http://jmini.github.io/blog/2018/2018-05-15_new-open-source-project.html) by [Jeremie Bresson](https://github.com/jmini)
@@ -928,13 +976,13 @@ Here are some companies/projects (alphabetical order) using OpenAPI Generator in
 - 2023-06-30 - [Generate Client SDKs with OpenApi Generator in Springboot](https://medium.com/@ramavathvinayak/generate-client-sdks-with-openapi-generator-in-springboot-f9f012e73c0b) by [Vinayak Ramavath](https://medium.com/@ramavathvinayak)
 - 2023-12-10 - [UnityでOpenAPI Generatorを使う](https://www.youtube.com/watch?v=CbNwKVV5LRM) by [Soup Tori](https://www.youtube.com/@souptori8417)
 
-## [6 - About Us](#table-of-contents)
+## [7 - About Us](#table-of-contents)
 
 What's the design philosophy or principle behind OpenAPI Generator?
 
 We focus on developer experience. The generators should produce code, config, documentation, and more that are easily understandable and consumable by users. We focused on simple use cases to start with (bottom-up approach). Since then the project and the community have grown a lot: 300k weekly downloads via NPM CLI wrapper, 20M downloads via openapi-generator-cli docker image just to highlight a few. We've gradually supported more features (e.g. oneOf, anyOf introduced in OpenAPI 3.0) in various generators and we will continue this approach to deliver something based on our understanding of user demand and what they want, and continue to add support of new features introduced in OpenAPI specification (such as v3.1 and future versions of the OpenAPI specification).
 
-### [6.1 - OpenAPI Generator Core Team](#table-of-contents)
+### [7.1 - OpenAPI Generator Core Team](#table-of-contents)
 
 OpenAPI Generator core team members are contributors who have been making significant contributions (review issues, fix bugs, make enhancements, etc) to the project on a regular basis.
 
@@ -1133,7 +1181,7 @@ Here are the requirements to become a core team member:
 
  To become a Template Creator, simply submit a PR for new API client (e.g. Rust, Elixir) or server stub (e.g. Ruby Grape) generator.
 
-### [6.2 - OpenAPI Generator Technical Committee](#table-of-contents)
+### [7.2 - OpenAPI Generator Technical Committee](#table-of-contents)
 
 Members of the OpenAPI Generator technical committee shoulder the following responsibilities:
 
@@ -1203,7 +1251,7 @@ Past Members of Technical Committee:
 
 :heart: = Link to support the contributor directly
 
-### [6.3 - History of OpenAPI Generator](#table-of-contents)
+### [7.3 - History of OpenAPI Generator](#table-of-contents)
 
 OpenAPI Generator is a fork of [Swagger Codegen](https://github.com/swagger-api/swagger-codegen). In view of the issues with the Swagger Codegen 3.0.0 (beta) release and the disagreement on the project's direction, more than 40 top contributors and template creators of Swagger Codegen decided to fork Swagger Codegen and maintain a community-driven version called "OpenAPI Generator". Please refer to the [Q&A](docs/qna.md) for more information.
 
@@ -1261,7 +1309,7 @@ OpenAPI Generator is a fork of [Swagger Codegen](https://github.com/swagger-api/
 
 :heart: = Link to support the contributor directly
 
-## [7 - License](#table-of-contents)
+## [8 - License](#table-of-contents)
 -------
 
 Copyright 2018 OpenAPI-Generator Contributors (https://openapi-generator.tech)
